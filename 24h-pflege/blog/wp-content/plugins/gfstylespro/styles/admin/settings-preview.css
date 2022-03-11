@@ -1,0 +1,219 @@
+.has_gfsp_preview div#adminmenumain,
+.has_gfsp_preview header.gform-settings-header,
+.has_gfsp_preview nav.gform-settings__navigation {
+    display: none;
+}
+
+.has_gfsp_preview .gform-settings__wrapper {
+    display: block;
+    max-width: 100%;
+    padding-bottom: 1px;
+    padding-top: 0;
+}
+
+.has_gfsp_preview div#wpcontent {
+    margin-left: 0;
+}
+
+.has_gfsp_preview form#gform-settings,
+iframe#preview_frame {
+    height: calc(100vh - 7em);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+iframe#preview_frame {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.has_gfsp_preview div#tab_gf_stylespro {
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 0.875rem;
+    -ms-grid-columns: 12.875rem auto;
+    grid-template-columns: 21.875rem 1fr;
+    gap: 2em;
+}
+
+.has_gfsp_preview #wpbody-content {
+    padding-bottom: 0;
+}
+
+.has_gfsp_preview .gform-settings__wrapper .alert {
+    grid-area: 1 / 1 / span 1 / span 2;
+    margin: 0;
+}
+
+.has_gfsp_preview [id$=_font_size],
+.has_gfsp_preview [id$=_field_margin_bottom] {
+    width: 100%;
+}
+
+.has_gfsp_preview [id$=_field_icon_color],
+.has_gfsp_preview [id$=_choice_style_color],
+.has_gfsp_preview [id$=_field_margin_bottom] {
+    width: 100%;
+}
+
+.has_gfsp_preview [id$=_btn_color],
+.has_gfsp_preview [id$=_btn_bg_color],
+.has_gfsp_preview [id$=_o_custom_bg],
+.has_gfsp_preview [id$=_o_custom_bg_text],
+.has_gfsp_preview [id$=_validation_color],
+.has_gfsp_preview [id$=_validation_bg_color] {
+    width: 100%;
+}
+
+.has_gfsp_preview [id$=_font],
+.has_gfsp_preview [id$=_font_custom] {
+    width: 100%;
+}
+
+.has_gfsp_preview [id$=_font_size] {
+    width: 30%;
+}
+
+.has_gfsp_preview [id$=_font_color] {
+    width: 64%;
+    margin-right: 0;
+}
+
+.has_gfsp_preview [id$=_bg_image] {
+    width: 100%;
+}
+
+.has_gfsp_preview [id$=_bg_image] button.media-button.button {
+    width: 100%;
+    margin-top: 1em;
+}
+
+.has_gfsp_preview [id$=_bg_size] {
+    width: 50%;
+}
+
+.has_gfsp_preview .adv_field {
+    margin-right: 0px;
+}
+
+.has_gfsp_preview .adv_font {
+    margin-right: 1em;
+}
+
+.has_gfsp_preview .theme_extra_info {
+    display: none;
+}
+.has_gfsp_preview .info.enhanced_features {
+    margin-top: 2em;
+}
+.has_gfsp_preview .theme_additional {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: none;
+}
+
+.close_preview {
+    position: absolute;
+    top: -1px;
+    left: 31px;
+}
+
+.preview_frame_wrapper {
+    position: relative;
+}
+
+.close_preview span {
+    width: 0;
+    display: inline-block;
+    overflow: hidden;
+    transition: .1s all;
+    vertical-align: bottom
+}
+
+.close_preview a:hover span {
+    margin-left: 1em;
+    width: 115px;
+}
+
+.close_preview a {
+    position: absolute;
+}
+
+.close_preview .button:first-child {
+    right: 0;
+}
+
+.has_gfsp_preview .gfsp_universal_settings .gform-settings-panel__content:before {
+    content: "Live preview is not available for Universal Settings. Update Settings to see the changes made here.";
+    display: block;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    background: #fbfbfb;
+    font-style: italic;
+}
+
+.has_gfsp_preview .label_font_size {
+    margin-right: 10px;
+}
+
+.has_gfsp_preview .adv_field.adv_font_size+.adv_color:nth-child(2) {
+    width: 167px;
+}
+
+.has_gfsp_preview .adv_fields b:first-child {
+    margin-top: 1em;
+}
+
+.has_gfsp_preview [id$=_background] .gform-settings-choice--inline {
+    display: block;
+}
+
+.has_gfsp_preview .adv_fields hr {
+    margin: 10px 0;
+}
+
+.has_gfsp_preview .adv_fields b {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.has_gfsp_preview select#theme {
+    width: calc(100% - 70px);
+}
+
+.has_gfsp_preview #gform_setting_theme .button span {
+    display: none;
+}
+
+.has_gfsp_preview #gform_setting_theme .button i {
+    display: block;
+}
+
+.has_gfsp_preview .theme_options_extra {
+    padding-right: 0;
+    margin-top: 0;
+}
+
+/* Scrollbar styling */
+
+/* Firefox */
+#tab_gf_stylespro * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(70, 70, 70) auto;
+}
+
+/* Chrome, Edge, and Safari */
+#tab_gf_stylespro *::-webkit-scrollbar {
+    width: 7px;
+}
+
+#tab_gf_stylespro *::-webkit-scrollbar-track {
+    background-color: rgb(239 239 239);
+}
+
+#tab_gf_stylespro *::-webkit-scrollbar-thumb {
+    background-color: rgb(62 125 166);
+}
+
+/* /Scrollbar styling */

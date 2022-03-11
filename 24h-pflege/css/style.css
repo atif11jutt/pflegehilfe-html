@@ -1,0 +1,2330 @@
+/*! tailwindcss v2.2.15 | MIT License | https://tailwindcss.com *//*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+
+html {
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	   tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+Remove the margin in all browsers.
+*/
+
+body {
+	margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
+	font-family:
+		system-ui,
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+	height: 0; /* 1 */
+	color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+	-webkit-text-decoration: underline dotted;
+	        text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+	font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+	font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+	text-indent: 0; /* 1 */
+	border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select { /* 1 */
+	text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+:-moz-ui-invalid {
+	box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+	padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+	display: list-item;
+}/**
+ * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
+ * A thin layer on top of normalize.css that provides a starting point more
+ * suitable for web applications.
+ */
+
+/**
+ * Removes the default spacing and border for appropriate elements.
+ */
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  background-image: none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Tailwind custom reset styles
+ */
+
+/**
+ * 1. Use the user's configured `sans` font-family (with Tailwind's default
+ *    sans-serif font stack as a fallback) as a sane default.
+ * 2. Use Tailwind's default "normal" line-height so the user isn't forced
+ *    to override it to ensure consistency even when using the default theme.
+ */
+
+html {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  line-height: 1.5; /* 2 */
+}
+
+
+/**
+ * Inherit font-family and line-height from `html` so users can set them as
+ * a class directly on the `html` element.
+ */
+
+body {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+/**
+ * 1. Prevent padding and border from affecting element width.
+ *
+ *    We used to set this in the html element and inherit from
+ *    the parent element for everything else. This caused issues
+ *    in shadow-dom-enhanced elements like <details> where the content
+ *    is wrapped by a div with box-sizing set to `content-box`.
+ *
+ *    https://github.com/mozdevs/cssremedy/issues/4
+ *
+ *
+ * 2. Allow adding a border to an element by just adding a border-width.
+ *
+ *    By default, the way the browser specifies that an element should have no
+ *    border is by setting it's border-style to `none` in the user-agent
+ *    stylesheet.
+ *
+ *    In order to easily add borders to elements by just setting the `border-width`
+ *    property, we change the default border-style for all elements to `solid`, and
+ *    use border-width to hide them instead. This way our `border` utilities only
+ *    need to set the `border-width` property instead of the entire `border`
+ *    shorthand, making our border utilities much more straightforward to compose.
+ *
+ *    https://github.com/tailwindcss/tailwindcss/pull/116
+ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: currentColor; /* 2 */
+}
+
+/*
+ * Ensure horizontal rules are visible by default
+ */
+
+hr {
+  border-top-width: 1px;
+}
+
+/**
+ * Undo the `border-style: none` reset that Normalize applies to images so that
+ * our `border-{width}` utilities have the expected effect.
+ *
+ * The Normalize reset is unnecessary for us since we default the border-width
+ * to 0 on all elements.
+ *
+ * https://github.com/tailwindcss/tailwindcss/issues/362
+ */
+
+img {
+  border-style: solid;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/**
+ * Override legacy focus reset from Normalize with modern Firefox focus styles.
+ *
+ * This is actually an improvement over the new defaults in Firefox in our testing,
+ * as it triggers the better focus styles even for links, which still use a dotted
+ * outline in Firefox by default.
+ */
+ 
+:-moz-focusring {
+	outline: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/**
+ * Reset links to optimize for opt-in styling instead of
+ * opt-out.
+ */
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/**
+ * Reset form element properties that are easy to forget to
+ * style explicitly so you don't inadvertently introduce
+ * styles that deviate from your design system. These styles
+ * supplement a partial reset that is already applied by
+ * normalize.css.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+/**
+ * Use the configured 'mono' font family for elements that
+ * are expected to be rendered with a monospace font, falling
+ * back to the system monospace stack if there is no configured
+ * 'mono' font family.
+ */
+
+pre,
+code,
+kbd,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/**
+ * 1. Make replaced elements `display: block` by default as that's
+ *    the behavior you want almost all of the time. Inspired by
+ *    CSS Remedy, with `svg` added as well.
+ *
+ *    https://github.com/mozdevs/cssremedy/issues/14
+ * 
+ * 2. Add `vertical-align: middle` to align replaced elements more
+ *    sensibly by default when overriding `display` by adding a
+ *    utility like `inline`.
+ *
+ *    This can trigger a poorly considered linting error in some
+ *    tools but is included by design.
+ * 
+ *    https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210
+ */
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/**
+ * Constrain images and videos to the parent width and preserve
+ * their intrinsic aspect ratio.
+ *
+ * https://github.com/mozdevs/cssremedy/issues/14
+ */
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Ensure the default browser behavior of the `hidden` attribute.
+ */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+	--tw-translate-x: 0;
+	--tw-translate-y: 0;
+	--tw-rotate: 0;
+	--tw-skew-x: 0;
+	--tw-skew-y: 0;
+	--tw-scale-x: 1;
+	--tw-scale-y: 1;
+	--tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+	--tw-border-opacity: 1;
+	border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+	--tw-ring-offset-shadow: 0 0 #0000;
+	--tw-ring-shadow: 0 0 #0000;
+	--tw-shadow: 0 0 #0000;
+	--tw-blur: var(--tw-empty,/*!*/ /*!*/);
+	--tw-brightness: var(--tw-empty,/*!*/ /*!*/);
+	--tw-contrast: var(--tw-empty,/*!*/ /*!*/);
+	--tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
+	--tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
+	--tw-invert: var(--tw-empty,/*!*/ /*!*/);
+	--tw-saturate: var(--tw-empty,/*!*/ /*!*/);
+	--tw-sepia: var(--tw-empty,/*!*/ /*!*/);
+	--tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
+	--tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+/* ====================UTILITIES==================== */
+html{
+    scroll-behavior: smooth;
+    transition: scroll-behavior .4s ease-in;
+}
+
+.content-width {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1270px;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+.heading-40 {
+	font-family: Cera Pro;
+	font-size: 28px;
+	font-weight: 700;
+	text-transform: capitalize;
+	line-height: 2.5rem;
+}
+@media (min-width: 1024px) {
+
+	.heading-40 {
+		font-size: 40px;
+	}
+
+	.heading-40 {
+		line-height: 50px;
+	}
+}
+.heading-28 {
+	font-family: Cera Pro;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 700;
+	line-height: 2rem;
+}
+@media (min-width: 640px) {
+
+	.heading-28 {
+		font-size: 28px;
+	}
+
+	.heading-28 {
+		line-height: 42px;
+	}
+}
+
+.text-18 {
+	font-family: Cera Pro;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	font-weight: 700;
+	--tw-text-opacity: 1;
+	color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+
+.text-16 {
+	font-family: Roboto;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 400;
+	line-height: 1.75rem;
+}
+.text-14 {
+	font-family: Roboto;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+}
+.link {
+	font-family: Cera Pro;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 700;
+	line-height: 1.25rem;
+	--tw-text-opacity: 1;
+	color: rgba(0, 46, 87, var(--tw-text-opacity));
+}
+@media (min-width: 1024px) {
+
+	.link {
+		--tw-text-opacity: 1;
+		color: rgba(255, 255, 255, var(--tw-text-opacity));
+	}
+}
+/* ====================Navbar responsive==================== */
+.nav-toggle {
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	max-height: 100vh;
+	width: 100%;
+}
+@media (min-width: 1024px) {
+
+	.nav-toggle {
+		position: relative;
+	}
+
+	.nav-toggle {
+		max-height: 0px;
+	}
+}
+
+
+.nav-target {
+	pointer-events: none;
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	transform-origin: top;
+	--tw-scale-y: 0;
+	transform: var(--tw-transform);
+	transform: var(--tw-transform);
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+	opacity: 0;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+	transition-duration: 300ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+
+@media (min-width: 1024px) {
+
+	.nav-target {
+		pointer-events: auto;
+	}
+
+	.nav-target {
+		visibility: visible;
+	}
+
+	.nav-target {
+		position: static;
+	}
+
+	.nav-target {
+		width: auto;
+	}
+
+	.nav-target {
+		--tw-scale-y: 1;
+		transform: var(--tw-transform);
+	}
+
+	.nav-target {
+		transform: none;
+	}
+
+	.nav-target {
+		background-color: transparent;
+	}
+
+	.nav-target {
+		opacity: 1;
+	}
+}
+
+
+.nav-target{
+    max-height: 0;
+}
+
+.nav-target.active {
+	pointer-events: auto;
+	visibility: visible;
+	--tw-scale-y: 1;
+	transform: var(--tw-transform);
+	opacity: 1;
+    max-height: 900px;
+}
+
+
+/* ====================UTILITIES END==================== */
+
+/* custom css */
+
+.bg-circle{
+background: #54A7EB;
+opacity: 0.5;
+filter: blur(150px);
+}
+.bg-small-circle{
+background: #54A7EB;
+opacity: 0.75;
+filter: blur(150px);
+}
+.img-circle{
+background: #004B8D;
+opacity: 0.2;
+filter: blur(200px);
+}
+.box-shadow{
+    box-shadow: 0px 20px 40px -2px rgba(0, 75, 141, 0.1);
+}
+.card-shadow{
+    box-shadow: 0px 10px 30px rgba(0, 75, 141, 0.2);
+    border-radius: 10px;
+}
+.img-filter{
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1));
+}
+.counter-gradient{
+    background: linear-gradient(180deg, #004B8D 32.86%, #003564 100%);
+   box-shadow: 0px 10px 15px -2px rgba(0, 75, 141, 0.2);
+   border-radius: 5px;
+}
+
+
+/* [BUTTONS] */
+.btn-primary {
+	display: flex;
+	height: 50px;
+	width: 300px;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	--tw-bg-opacity: 1;
+	background-color: rgba(65, 146, 217, var(--tw-bg-opacity));
+	font-family: Cera Pro;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	font-weight: 700;
+	--tw-text-opacity: 1;
+	color: rgba(255, 255, 255, var(--tw-text-opacity));
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+	transition-duration: 200ms;
+}
+.btn-primary:hover {
+	--tw-bg-opacity: 1;
+	background-color: rgba(0, 75, 141, var(--tw-bg-opacity));
+}
+
+/* [slider control] */
+.customer-control button {
+	display: block;
+	height: 0.625rem;
+	width: 0.625rem;
+	border-radius: 9999px;
+	--tw-bg-opacity: 1;
+	background-color: rgba(0, 75, 141, var(--tw-bg-opacity));
+	--tw-bg-opacity: 0.2;
+	color: transparent;
+    font-size: 0px;
+}
+
+.customer-control {
+	display: flex;
+	align-items: center;
+	gap: 0.625rem;
+}
+
+.customer-control button.tns-nav-active {
+	--tw-bg-opacity: 1;
+}
+
+/* [TOGGLE MENU] */
+.hamburger .line {
+    width: 27px;
+    height: 2px;
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+    display: block;
+    margin: 6px auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+/* Animation */
+
+#hamburger-6.is-active {
+    transition: all 0.2s ease-in-out;
+    transition-delay: 0.4s;
+    transform: rotate(45deg);
+}
+
+#hamburger-6.is-active .line:nth-child(2) {
+    width: 0px;
+}
+
+#hamburger-6.is-active .line:nth-child(1),
+#hamburger-6.is-active .line:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+#hamburger-6.is-active .line:nth-child(1) {
+    transform: translateY(8px);
+}
+
+#hamburger-6.is-active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(90deg);
+}
+
+
+.pointer-events-none {
+	pointer-events: none;
+}
+
+
+.absolute {
+	position: absolute;
+}
+
+
+.relative {
+	position: relative;
+}
+
+
+.inset-0 {
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+
+
+.-top-3\/4 {
+	top: -75%;
+}
+
+
+.-right-44 {
+	right: -11rem;
+}
+
+
+.-top-2\/3 {
+	top: -66.666667%;
+}
+
+
+.-left-1\/3 {
+	left: -33.333333%;
+}
+
+
+.-top-20 {
+	top: -5rem;
+}
+
+
+.left-1\/2 {
+	left: 50%;
+}
+
+
+.top-1\/2 {
+	top: 50%;
+}
+
+
+.left-0 {
+	left: 0px;
+}
+
+
+.right-0 {
+	right: 0px;
+}
+
+
+.-bottom-6 {
+	bottom: -1.5rem;
+}
+
+
+.-bottom-20 {
+	bottom: -5rem;
+}
+
+
+.-bottom-4 {
+	bottom: -1rem;
+}
+
+
+.bottom-0 {
+	bottom: 0px;
+}
+
+
+.z-10 {
+	z-index: 10;
+}
+
+
+.z-50 {
+	z-index: 50;
+}
+
+
+.z-back {
+	z-index: -1;
+}
+
+
+.z-30 {
+	z-index: 30;
+}
+
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.mt-8 {
+	margin-top: 2rem;
+}
+
+
+.ml-auto {
+	margin-left: auto;
+}
+
+
+.mb-20 {
+	margin-bottom: 5rem;
+}
+
+
+.-mt-20 {
+	margin-top: -5rem;
+}
+
+
+.mt-5 {
+	margin-top: 1.25rem;
+}
+
+
+.mt-4 {
+	margin-top: 1rem;
+}
+
+
+.mb-6 {
+	margin-bottom: 1.5rem;
+}
+
+
+.mb-3 {
+	margin-bottom: 0.75rem;
+}
+
+
+.mt-3 {
+	margin-top: 0.75rem;
+}
+
+
+.mt-6 {
+	margin-top: 1.5rem;
+}
+
+
+.mt-9 {
+	margin-top: 2.25rem;
+}
+
+
+.mb-5 {
+	margin-bottom: 1.25rem;
+}
+
+
+.mt-12 {
+	margin-top: 3rem;
+}
+
+
+.mb-14 {
+	margin-bottom: 3.5rem;
+}
+
+
+.mb-25px {
+	margin-bottom: 25px;
+}
+
+
+.mb-2\.5 {
+	margin-bottom: 0.625rem;
+}
+
+
+.mb-2 {
+	margin-bottom: 0.5rem;
+}
+
+
+.mt-90px {
+	margin-top: 90px;
+}
+
+
+.mb-100px {
+	margin-bottom: 100px;
+}
+
+
+.mb-50px {
+	margin-bottom: 50px;
+}
+
+
+.mb-70px {
+	margin-bottom: 70px;
+}
+
+
+.mb-8 {
+	margin-bottom: 2rem;
+}
+
+
+.mb-1 {
+	margin-bottom: 0.25rem;
+}
+
+
+.block {
+	display: block;
+}
+
+
+.inline-block {
+	display: inline-block;
+}
+
+
+.flex {
+	display: flex;
+}
+
+
+.grid {
+	display: grid;
+}
+
+
+.hidden {
+	display: none;
+}
+
+
+.h-700 {
+	height: 700px;
+}
+
+@media only screen and (max-width: 425px) {
+	.h-700 {
+		height: 480px;
+}
+	.above-the-fold div p {
+		display:none;
+		
+	}
+	.above-the-fold {
+		padding-top: 1.5rem !important;
+		gap:0em !important;
+	}
+}
+
+
+
+.h-20 {
+	height: 5rem;
+}
+
+
+.h-auto {
+	height: auto;
+}
+
+
+.h-full {
+	height: 100%;
+}
+
+
+.h-1538 {
+	height: 1538px;
+}
+
+
+.h-1018 {
+	height: 1018px;
+}
+
+
+.h-5\/6 {
+	height: 83.333333%;
+}
+
+
+.h-460 {
+	height: 460px;
+}
+
+
+.h-14 {
+	height: 3.5rem;
+}
+
+
+.h-70 {
+	height: 70px;
+}
+
+
+.h-0\.5 {
+	height: 0.125rem;
+}
+
+
+.h-0 {
+	height: 0px;
+}
+
+
+.h-36 {
+	height: 9rem;
+}
+
+
+.h-8 {
+	height: 2rem;
+}
+
+
+.h-56 {
+	height: 14rem;
+}
+
+
+.h-70px {
+	height: 70px;
+}
+
+
+.h-100px {
+	height: 100px;
+}
+
+
+.h-px {
+	height: 1px;
+}
+
+
+.h-10 {
+	height: 2.5rem;
+}
+
+
+.w-full {
+	width: 100%;
+}
+
+
+.w-100px {
+	width: 100px;
+}
+
+
+.w-1538 {
+	width: 1538px;
+}
+
+
+.w-1018 {
+	width: 1018px;
+}
+
+
+.w-0\.5 {
+	width: 0.125rem;
+}
+
+
+.w-0 {
+	width: 0px;
+}
+
+
+.w-12 {
+	width: 3rem;
+}
+
+
+.w-36 {
+	width: 9rem;
+}
+
+
+.w-8 {
+	width: 2rem;
+}
+
+
+.w-72 {
+	width: 18rem;
+}
+
+
+.w-96 {
+	width: 24rem;
+}
+
+
+.w-20 {
+	width: 5rem;
+}
+
+
+.w-9 {
+	width: 2.25rem;
+}
+
+
+.w-10 {
+	width: 2.5rem;
+}
+
+
+.max-w-sm {
+	max-width: 24rem;
+}
+
+
+.max-w-1270 {
+	max-width: 1270px;
+}
+
+
+.max-w-3xl {
+	max-width: 48rem;
+}
+
+
+.max-w-lg {
+	max-width: 32rem;
+}
+
+
+.max-w-xl {
+	max-width: 36rem;
+}
+
+
+.max-w-5xl {
+	max-width: 64rem;
+}
+
+
+.max-w-850 {
+	max-width: 850px;
+}
+
+
+.flex-1 {
+	flex: 1 1 0%;
+}
+
+
+.-translate-y-1\/2 {
+	--tw-translate-y: -50%;
+	transform: var(--tw-transform);
+}
+
+
+.-translate-x-1\/2 {
+	--tw-translate-x: -50%;
+	transform: var(--tw-transform);
+}
+
+
+.translate-x-4 {
+	--tw-translate-x: 1rem;
+	transform: var(--tw-transform);
+}
+
+
+.transform {
+	transform: var(--tw-transform);
+}
+
+
+.grid-cols-1 {
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+
+.flex-col {
+	flex-direction: column;
+}
+
+
+.items-center {
+	align-items: center;
+}
+
+
+.justify-center {
+	justify-content: center;
+}
+
+
+.justify-between {
+	justify-content: space-between;
+}
+
+
+.gap-7 {
+	gap: 1.75rem;
+}
+
+
+.gap-4 {
+	gap: 1rem;
+}
+
+
+.gap-2 {
+	gap: 0.5rem;
+}
+
+
+.gap-10 {
+	gap: 2.5rem;
+}
+
+
+.gap-3 {
+	gap: 0.75rem;
+}
+
+
+.gap-9 {
+	gap: 2.25rem;
+}
+
+
+.gap-8 {
+	gap: 2rem;
+}
+
+
+.gap-1 {
+	gap: 0.25rem;
+}
+
+
+.gap-5 {
+	gap: 1.25rem;
+}
+
+
+.gap-x-5 {
+	-moz-column-gap: 1.25rem;
+	     column-gap: 1.25rem;
+}
+
+
+.gap-y-10 {
+	row-gap: 2.5rem;
+}
+
+
+.gap-x-60px {
+	-moz-column-gap: 60px;
+	     column-gap: 60px;
+}
+
+
+.gap-y-8 {
+	row-gap: 2rem;
+}
+
+
+.self-end {
+	align-self: flex-end;
+}
+
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+
+.rounded-full {
+	border-radius: 9999px;
+}
+
+
+.rounded-lg {
+	border-radius: 0.5rem;
+}
+
+
+.rounded-10px {
+	border-radius: 10px;
+}
+
+
+.border-0 {
+	border-width: 0px;
+}
+
+
+.border-2 {
+	border-width: 2px;
+}
+
+
+.border-t {
+	border-top-width: 1px;
+}
+
+
+.border-l-2 {
+	border-left-width: 2px;
+}
+
+
+.border-dashed {
+	border-style: dashed;
+}
+
+
+.border-dark {
+	--tw-border-opacity: 1;
+	border-color: rgba(0, 46, 87, var(--tw-border-opacity));
+}
+
+
+.border-blue-primary {
+	--tw-border-opacity: 1;
+	border-color: rgba(65, 146, 217, var(--tw-border-opacity));
+}
+
+
+.border-opacity-75 {
+	--tw-border-opacity: 0.75;
+}
+
+
+.bg-white {
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+
+.bg-primary {
+	--tw-bg-opacity: 1;
+	background-color: rgba(84, 167, 235, var(--tw-bg-opacity));
+}
+
+
+.bg-primary-dark {
+	--tw-bg-opacity: 1;
+	background-color: rgba(22, 121, 208, var(--tw-bg-opacity));
+}
+
+
+.bg-gray-light {
+	--tw-bg-opacity: 1;
+	background-color: rgba(249, 249, 249, var(--tw-bg-opacity));
+}
+
+
+.bg-sky-blue {
+	--tw-bg-opacity: 1;
+	background-color: rgba(242, 249, 255, var(--tw-bg-opacity));
+}
+
+
+.bg-blue-primary {
+	--tw-bg-opacity: 1;
+	background-color: rgba(65, 146, 217, var(--tw-bg-opacity));
+}
+
+
+.bg-opacity-30 {
+	--tw-bg-opacity: 0.3;
+}
+
+
+.bg-hero-gradient {
+	background-image: linear-gradient(73.24deg, #004B8D 40.99%, #54A7EB );
+}
+
+
+.bg-card-gradient {
+	background-image: linear-gradient(21.73deg, #004B8D 2.22%, #4192D9 106.94%);
+}
+
+
+.bg-footer-gradient {
+	background-image: linear-gradient(23.37deg, #004B8D 4.49%, #4192D9 129.7%);
+}
+
+
+.object-contain {
+	-o-object-fit: contain;
+	   object-fit: contain;
+}
+
+
+.object-cover {
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+
+.object-bottom {
+	-o-object-position: bottom;
+	   object-position: bottom;
+}
+
+
+.p-5 {
+	padding: 1.25rem;
+}
+
+
+.p-8 {
+	padding: 2rem;
+}
+
+
+.p-4 {
+	padding: 1rem;
+}
+
+
+.px-10 {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+
+
+.py-16 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+
+.px-5 {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+
+
+.px-0 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+.px-4 {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+
+.py-7 {
+	padding-top: 1.75rem;
+	padding-bottom: 1.75rem;
+}
+
+
+.py-8 {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+
+.py-px {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+
+.pt-28 {
+	padding-top: 7rem;
+}
+
+
+.pr-0 {
+	padding-right: 0px;
+}
+
+
+.pb-16 {
+	padding-bottom: 4rem;
+}
+
+
+.pt-8 {
+	padding-top: 2rem;
+}
+
+
+.pt-20 {
+	padding-top: 5rem;
+}
+
+
+.pb-10 {
+	padding-bottom: 2.5rem;
+}
+
+
+.pb-7 {
+	padding-bottom: 1.75rem;
+}
+
+
+.pt-90px {
+	padding-top: 90px;
+}
+
+
+.pb-100px {
+	padding-bottom: 100px;
+}
+
+
+.pb-9 {
+	padding-bottom: 2.25rem;
+}
+
+
+.pl-6 {
+	padding-left: 1.5rem;
+}
+
+
+.text-left {
+	text-align: left;
+}
+
+
+.text-center {
+	text-align: center;
+}
+
+
+.font-barlow {
+	font-family: Barlow;
+}
+
+
+.font-roboto {
+	font-family: Roboto;
+}
+
+
+.font-cera-pro {
+	font-family: Cera Pro;
+}
+
+
+.text-sm {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
+
+.service-hours {
+	font-size: 0.875rem;
+	line-height: 1.8rem;
+}
+
+
+.text-xl {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+
+
+.text-28 {
+	font-size: 28px;
+}
+
+
+.text-2xl {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+
+.text-base {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+
+.text-lg {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+}
+
+
+.font-medium {
+	font-weight: 500;
+}
+
+
+.font-bold {
+	font-weight: 700;
+}
+
+
+.font-normal {
+	font-weight: 400;
+}
+
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+
+.italic {
+	font-style: italic;
+}
+
+
+.leading-8 {
+	line-height: 2rem;
+}
+
+
+.leading-5 {
+	line-height: 1.25rem;
+}
+
+
+.leading-9 {
+	line-height: 2.25rem;
+}
+
+
+.text-white {
+	--tw-text-opacity: 1;
+	color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+
+.text-dark-black {
+	--tw-text-opacity: 1;
+	color: rgba(17, 17, 17, var(--tw-text-opacity));
+}
+
+
+.text-navy {
+	--tw-text-opacity: 1;
+	color: rgba(0, 75, 141, var(--tw-text-opacity));
+}
+
+
+.text-orange {
+	--tw-text-opacity: 1;
+	color: rgba(252, 189, 3, var(--tw-text-opacity));
+}
+
+
+.text-light {
+	--tw-text-opacity: 1;
+	color: rgba(54, 54, 54, var(--tw-text-opacity));
+}
+
+
+.text-blue-primary {
+	--tw-text-opacity: 1;
+	color: rgba(65, 146, 217, var(--tw-text-opacity));
+}
+
+
+.shadow-service-card {
+	--tw-shadow: 0px 20px 40px -2px rgba(186, 228, 230, 0.5);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+
+.shadow-btn-cta {
+	--tw-shadow: 0px 15px 30px -2px rgba(2, 68, 126, 0.4);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+
+.drop-shadow-service-img {
+	--tw-drop-shadow: drop-shadow(10px 20px 40px rgba(0, 75, 141, 0.25));
+	filter: var(--tw-filter);
+}
+
+
+.drop-shadow-header-img {
+	--tw-drop-shadow: drop-shadow(-10px 40px 70px rgba(0, 42, 80, 0.5));
+	filter: var(--tw-filter);
+}
+
+
+.filter {
+	filter: var(--tw-filter);
+}
+
+
+.transition-all {
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+
+
+.duration-150 {
+	transition-duration: 150ms;
+}
+
+
+.hover\:bg-navy:hover {
+	--tw-bg-opacity: 1;
+	background-color: rgba(0, 75, 141, var(--tw-bg-opacity));
+}
+
+
+.hover\:shadow-none:hover {
+	--tw-shadow: 0 0 #0000;
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+
+@media (min-width: 640px) {
+
+	.sm\:mx-auto {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.sm\:mt-20 {
+		margin-top: 5rem;
+	}
+
+	.sm\:block {
+		display: block;
+	}
+
+	.sm\:grid {
+		display: grid;
+	}
+
+	.sm\:h-32 {
+		height: 8rem;
+	}
+
+	.sm\:w-48 {
+		width: 12rem;
+	}
+
+	.sm\:w-72 {
+		width: 18rem;
+	}
+
+	.sm\:grid-cols-2 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.sm\:grid-cols-3 {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.sm\:grid-cols-number-line {
+		grid-template-columns: 1fr -webkit-min-content 1fr;
+		grid-template-columns: 1fr min-content 1fr;
+	}
+
+	.sm\:overflow-visible {
+		overflow: visible;
+	}
+
+	.sm\:border-none {
+		border-style: none;
+	}
+
+	.sm\:py-20 {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+
+	.sm\:px-0 {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.sm\:px-5 {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
+	.sm\:pt-20 {
+		padding-top: 5rem;
+	}
+
+	.sm\:pr-8 {
+		padding-right: 2rem;
+	}
+
+	.sm\:pr-20 {
+		padding-right: 5rem;
+	}
+
+	.sm\:pl-0 {
+		padding-left: 0px;
+	}
+
+	.sm\:text-center {
+		text-align: center;
+	}
+
+	.sm\:text-base {
+		font-size: 1.43rem;
+		line-height: 1.5rem;
+	}
+
+	.sm\:text-28 {
+		font-size: 28px;
+	}
+}
+
+
+@media (min-width: 768px) {
+
+	.md\:top-0 {
+		top: 0px;
+	}
+
+	.md\:left-0 {
+		left: 0px;
+	}
+
+	.md\:ml-0 {
+		margin-left: 0px;
+	}
+
+	.md\:mt-52 {
+		margin-top: 13rem;
+	}
+
+	.md\:mt-0 {
+		margin-top: 0px;
+	}
+
+	.md\:mb-4 {
+		margin-bottom: 1rem;
+	}
+
+	.md\:mb-5 {
+		margin-bottom: 1.25rem;
+	}
+
+	.md\:block {
+		display: block;
+	}
+
+	.md\:grid {
+		display: grid;
+	}
+
+	.md\:h-600 {
+		height: 600px;
+	}
+
+	.md\:h-full {
+		height: 100%;
+	}
+
+	.md\:w-600 {
+		width: 600px;
+	}
+
+	.md\:max-w-none {
+		max-width: none;
+	}
+
+	.md\:flex-none {
+		flex: none;
+	}
+
+	.md\:translate-x-0 {
+		--tw-translate-x: 0px;
+		transform: var(--tw-transform);
+	}
+
+	.md\:transform-none {
+		transform: none;
+	}
+
+	.md\:grid-cols-2 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.md\:grid-cols-4 {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	.md\:flex-row {
+		flex-direction: row;
+	}
+
+	.md\:justify-start {
+		justify-content: flex-start;
+	}
+
+	.md\:gap-20 {
+		gap: 5rem;
+	}
+
+	.md\:gap-0 {
+		gap: 0px;
+	}
+
+	.md\:gap-y-50px {
+		row-gap: 50px;
+	}
+
+	.md\:gap-y-1 {
+		row-gap: 0.25rem;
+	}
+
+	.md\:border-2 {
+		border-width: 2px;
+	}
+
+	.md\:border-dashed {
+		border-style: dashed;
+	}
+
+	.md\:border-blue-primary {
+		--tw-border-opacity: 1;
+		border-color: rgba(65, 146, 217, var(--tw-border-opacity));
+	}
+
+	.md\:px-5 {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
+	.md\:px-0 {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.md\:pt-0 {
+		padding-top: 0px;
+	}
+
+	.md\:text-base {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+
+	.md\:text-lg {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+	}
+}
+
+
+@media (min-width: 1024px) {
+
+	.lg\:-mt-40 {
+		margin-top: -10rem;
+	}
+
+	.lg\:block {
+		display: block;
+	}
+
+	.lg\:hidden {
+		display: none;
+	}
+
+	.lg\:grid-cols-customer {
+		grid-template-columns: 1fr minmax(400px , 600px);
+	}
+
+	.lg\:flex-row {
+		flex-direction: row;
+	}
+
+	.lg\:flex-col {
+		flex-direction: column;
+	}
+
+	.lg\:items-center {
+		align-items: center;
+	}
+
+	.lg\:gap-24 {
+		gap: 6rem;
+	}
+
+	.lg\:gap-11 {
+		gap: 2.75rem;
+	}
+
+	.lg\:p-20 {
+		padding: 5rem;
+	}
+
+	.lg\:px-0 {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.lg\:py-0 {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	.lg\:pr-7 {
+		padding-right: 1.75rem;
+	}
+
+	.lg\:pr-16 {
+		padding-right: 4rem;
+	}
+}
+
+
+@media (min-width: 1280px) {
+
+	.xl\:mx-0 {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.xl\:-mt-14 {
+		margin-top: -3.5rem;
+	}
+
+	.xl\:mb-10 {
+		margin-bottom: 2.5rem;
+	}
+
+	.xl\:block {
+		display: block;
+	}
+
+	.xl\:flex {
+		display: flex;
+	}
+
+	.xl\:max-w-none {
+		max-width: none;
+	}
+}
+
+
+@media (min-width: 1536px) {
+
+	.\32xl\:grid-cols-service {
+		grid-template-columns: 1fr minmax(400px , 765px);
+	}
+}
+
+
+.myIframe {
+   min-height: 100px;
+   background:#fff url("./img/spinner.svg") no-repeat 50% top !important;
+}
+
+#overlay    {
+    z-index: 999;
+}
+
+.blur   {
+    filter: blur(5px) grayscale(0.6);
+	background-color:#004B8D!important;
+}
+	
+#overlay a {
+	width: 100%; 
+	height:100%; 
+	position: absolute;
+}	
+	
+
+
+#myIframe{
+	transition: 0.3s;
+}
+
+.activeFrame #myIframe{
+	position: sticky;
+    z-index: 100000;
+    transform: scale(1.05);
+}
+
+.activeFrame .frame-bg{
+    opacity: 0.5;
+	visibility: visible;
+}
+
+.frame-bg{
+	position: fixed;
+    background: #000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: 0.5s;
+}

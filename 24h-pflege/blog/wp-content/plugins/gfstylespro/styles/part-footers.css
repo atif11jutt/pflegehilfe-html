@@ -1,0 +1,64 @@
+.gf_footer_center .gform_page_footer,
+.gf_footer_center .gform_footer,
+.gf_footer_center_left .gform_page_footer,
+.gf_footer_center_left .gform_footer,
+.gf_footer_center_right .gform_page_footer,
+.gf_footer_center_right .gform_footer {
+    text-align: center;
+}
+.gf_footer_center_left .gform_page_footer .gform_previous_button {
+    float: left;
+}
+.gf_footer_center_right .gform_page_footer .gform_previous_button {
+    float: right;
+}
+.gf_footer_left .gform_page_footer,
+.gf_footer_left .gform_footer {
+    text-align: left;
+}
+.gf_footer_right .gform_page_footer,
+.gf_footer_right .gform_footer {
+    text-align: right;
+}
+.gf_footer_spread .gform_page_footer,
+.gf_footer_spread .gform_footer {
+    overflow: auto
+}
+.gf_footer_spread .gform_page_footer .button,
+.gf_footer_spread .gform_footer .button,
+.gf_footer_spread .gform_save_link,
+.gf_footer_spread .gform_ajax_spinner {
+    float: right;
+}
+.gf_footer_spread_wrapper .gform_footer .gform_save_link.button,
+.gf_footer_spread_wrapper .gform_page_footer .gform_save_link.button {
+    float: left;
+    margin-left: 0;
+}
+.gf_footer_spread .gform_page_footer .gform_previous_button {
+    float: left;
+    margin-right: 1em;
+}
+.gf_footer_spread .gform_page_footer .gform_next_button {
+	margin-left: 1em;
+}
+
+.gf_footer_spread .gform_ajax_spinner {
+    margin-top: .75em;
+}
+
+.gf_footer_full .gform_page_footer,
+.gf_footer_full .gform_footer {
+    display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+}
+.gf_footer_full .gform_page_footer .button,
+.gf_footer_full .gform_footer .button {
+    flex: 1 1 0;
+}
+.gf_footer_full .gform_page_footer .gform_save_link,
+.gf_footer_full .gform_footer .gform_save_link {
+    flex-basis: auto;
+    flex-grow: 0;
+}

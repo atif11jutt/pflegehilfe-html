@@ -1,0 +1,151 @@
+# Translation of RocketGenius - Gravity Forms Webhooks in German
+# This file is distributed under the same license as the RocketGenius - Gravity Forms Webhooks package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-07-29 17:38:01+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: de\n"
+"Project-Id-Version: RocketGenius - Gravity Forms Webhooks\n"
+
+#: class-gf-webhooks.php:971
+msgid "Fix it"
+msgstr "Behebe es"
+
+#: class-gf-webhooks.php:964
+msgid "The URL you have entered is not valid. For security reasons, some characters are not allowed."
+msgstr "Die von dir eingegebene URL ist nicht gültig. Aus Sicherheitsgründen sind manche Zeichen nicht erlaubt."
+
+#: class-gf-webhooks.php:963
+msgid "The URL you have entered is malformed."
+msgstr "Die von dir eingegebene URL ist ungültig."
+
+#: class-gf-webhooks.php:215
+msgid "REST API URL"
+msgstr "REST-API-URL"
+
+#: class-gf-webhooks.php:214
+msgid "Admin Ajax URL"
+msgstr "Admin-Ajax-URL"
+
+#: class-gf-webhooks.php:792
+msgid "Webhook was not successfully executed. %s (%d)"
+msgstr "Webhook wurde nicht erfolgreich ausgeführt. %s (%d)"
+
+#: class-gf-webhooks.php:761
+msgid "Webhook was not processed because request URL was empty."
+msgstr "Webhook wurde nicht ausgeführt, weil die Anfrage-URL leer war."
+
+#: class-gf-webhooks.php:498
+msgid "Select a Name"
+msgstr "Wähle einen Namen"
+
+#: class-gf-webhooks.php:456
+msgid "Execute Webhook if"
+msgstr "Webhook ausführen, falls"
+
+#: class-gf-webhooks.php:455
+msgid "Enable Condition"
+msgstr "Bedingung aktivieren"
+
+#: class-gf-webhooks.php:454
+msgid "Webhook Condition"
+msgstr "Webhook-Bedingung"
+
+#: class-gf-webhooks.php:440
+msgid "Setup the fields to be sent in the webhook request."
+msgstr "Felder einrichten, die mit der Webhook-Anfrage gesendet werden sollen."
+
+#: class-gf-webhooks.php:431 class-gf-webhooks.php:439
+msgid "Field Values"
+msgstr "Feld-Werte"
+
+#: class-gf-webhooks.php:425
+msgid "Select Fields"
+msgstr "Felder auswählen"
+
+#: class-gf-webhooks.php:421
+msgid "All Fields"
+msgstr "Alle Felder"
+
+#: class-gf-webhooks.php:417
+msgid "Select if all fields or select fields should be sent with the webhook request."
+msgstr "Auswählen, falls alle oder ausgewählte Felder mit der Webhook-Anfrage gesendet werden sollen."
+
+#: class-gf-webhooks.php:407 class-gf-webhooks.php:416
+msgid "Request Body"
+msgstr "Request Body"
+
+#: class-gf-webhooks.php:390
+msgid "Setup the HTTP headers to be sent with the webhook request."
+msgstr "HTTP Header zum Senden mit der Webhook-Anfrage einrichten."
+
+#: class-gf-webhooks.php:382 class-gf-webhooks.php:389
+msgid "Request Headers"
+msgstr "Request Headers"
+
+#: class-gf-webhooks.php:372
+msgid "FORM"
+msgstr "FORMULAR"
+
+#: class-gf-webhooks.php:368
+msgid "JSON"
+msgstr "JSON"
+
+#: class-gf-webhooks.php:364
+msgid "Select the format for the webhook request."
+msgstr "Format für die Webhook-Anfrage auswählen."
+
+#: class-gf-webhooks.php:356 class-gf-webhooks.php:363
+msgid "Request Format"
+msgstr "Anfrageformat"
+
+#: class-gf-webhooks.php:330
+msgid "Select the HTTP method used for the webhook request."
+msgstr "HTTP-Methode für die Webhook-Anfrage auswählen."
+
+#: class-gf-webhooks.php:322 class-gf-webhooks.php:329
+msgid "Request Method"
+msgstr "Request-Methode"
+
+#: class-gf-webhooks.php:317
+msgid "Enter the URL to be used in the webhook request."
+msgstr "URL für die Webhook-Anfrage eingeben."
+
+#: class-gf-webhooks.php:309 class-gf-webhooks.php:316
+#: class-gf-webhooks.php:481
+msgid "Request URL"
+msgstr "Anfrage-URL"
+
+#: class-gf-webhooks.php:301
+msgid "Enter a feed name to uniquely identify this setup."
+msgstr "Trage einen Feed-Namen ein, um dieses Setup eindeutig zu identifizieren."
+
+#: class-gf-webhooks.php:293 class-gf-webhooks.php:300
+#: class-gf-webhooks.php:395 class-gf-webhooks.php:480
+msgid "Name"
+msgstr "Name"
+
+#: class-gf-webhooks.php:237
+msgid "Send webhook only when payment is received."
+msgstr "Webhook nur senden, wenn eine Zahlung erhalten wurde."
+
+#. Author of the plugin
+msgid "Gravity Forms"
+msgstr "Gravity Forms"
+
+#. Description of the plugin
+msgid "Integrates Gravity Forms with third party services using custom webhooks."
+msgstr "Integriert Gravity Forms mit Drittanbieter-Diensten, durch individuelle Webhooks."
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://gravityforms.com"
+msgstr "https://gravityforms.com"
+
+#. Plugin Name of the plugin
+msgid "Gravity Forms Webhooks Add-On"
+msgstr "Gravity Forms Webhooks Add-On"
